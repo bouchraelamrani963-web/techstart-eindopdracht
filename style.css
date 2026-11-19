@@ -11,3 +11,29 @@ nav a {color: white;
 text-decoration: none;
 margin-right: 24px;
 }
+aside {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 4px solid #2563eb;
+}
+.inhoud-rij {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.inhoud-rij section {
+    flex: 2;
+}
+
+.inhoud-rij aside {
+    flex: 1;
+    margin-top: 0;
+}
+@media (max-width: 768px) {
+    .inhoud-rij {
+        flex-direction: column;
+    }
+}
