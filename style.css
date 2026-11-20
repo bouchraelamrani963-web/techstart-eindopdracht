@@ -29,12 +29,17 @@ aside {
 }
 
 .inhoud-rij aside {
-    flex: 1;
-    margin-top: 0;
+    flex: 0 1 400px;
+    margin-top: 25px;
 }
 @media (max-width: 768px) {
     .inhoud-rij {
         flex-direction: column;
+    }
+    .inhoud-rij aside {
+        flex: auto;
+        width: auto;
+        align-self: stretch;
     }
 }
 img {
@@ -81,4 +86,76 @@ body.donker aside {
     border-radius: 8px;
     cursor: pointer;
     margin-top: 10px;
+}
+.media-rij {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+
+}
+
+.media-rij img,
+.media-rij video {
+    width: 100%;
+    aspect-ratio: auto;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transform: translateX(-40px);
+    transform:translateY(-50px);
+}
+.media-rij img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    justify-self: center;
+    transform: translateX(40px);
+    background-color: #101827;
+
+}
+
+@media (max-width: 768) {
+    .media-rij {
+        grid-template-columns: 1fr;
+    }
+}
+a[href^="https://"] {
+    margin-right: 30px;
+}
+
+.intro-tekst {
+    max-width: 750px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.intro-tekst {
+    max-width: 750px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.intro-rij {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 580px;
+    gap: 30px;
+    aling-items: start;
+
+}
+
+.intro-afbeelding {
+    width: 100%;
+    max-width: 900px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.video-midden {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px auto 35px;
 }
