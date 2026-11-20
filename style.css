@@ -37,3 +37,21 @@ aside {
         flex-direction: column;
     }
 }
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+footer {
+    background-color: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
