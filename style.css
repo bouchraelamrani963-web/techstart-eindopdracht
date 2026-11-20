@@ -140,7 +140,7 @@ a[href^="https://"] {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 580px;
     gap: 30px;
-    aling-items: start;
+    align-items: start;
 
 }
 
@@ -158,4 +158,29 @@ a[href^="https://"] {
     height: auto;
     border-radius: 8px;
     margin: 20px auto 35px;
+}
+
+
+/* Mobiele weergave */
+@media (max-width: 768px) {
+    .intro-rij {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .intro-afbeelding {
+        width: 100%;
+        max-width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .intro-tekst {
+        max-width: 100%;
+    }
+
+    .video-midden {
+        width: 100%;
+        height: auto;
+    }
 }
