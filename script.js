@@ -9,3 +9,27 @@ function veranderThema() {
     }
 }
 themaKnop.addEventListener("click", veranderThema);
+
+const contactFormulier = document.querySelector("#contactFormulier");
+function verzenden(event) {
+   event. preventDefault();
+   if (naamVeld.value ==="") {
+    console.log("vul je naam in");
+    return;
+   
+}
+if (emailVeld.value ==="") {
+    console.log("vul je email in");
+    return;
+}
+    console.log("contactformulier verzenden");
+    
+}
+if (contactFormulier) {
+contactFormulier.addEventListener("submit", verzenden);
+}
+
+const naamVeld = document.querySelector("#volledigeNaam");
+
+const emailVeld = document.querySelector("#email");
+ 
