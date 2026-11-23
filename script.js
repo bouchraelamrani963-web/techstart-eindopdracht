@@ -1,7 +1,18 @@
 const themaKnop = document.querySelector("#themaKnop");
+const opgeslagenThema = localStorage.getItem("thema");
+
+if (opgeslagenThema === "donker") {
+    document.body.classList.add("donker");
+    themaKnop.textContent = "Licht thema";
+}
 function veranderThema() {
     console.log("Er is op themaknop geklikt!");
     document.body.classList.toggle("donker");
+    if (document.body.classList.contains("donker")) {
+    localStorage.setItem("thema", "donker");
+} else {
+    localStorage.setItem("thema", "licht");
+}
     if (document.body.classList.contains("donker")) {
         themaKnop.textContent = "Licht thema";
     } else {
@@ -49,3 +60,9 @@ const emailVeld = document.querySelector("#email");
 const berichtVeld = document.querySelector("#tekst");
 
 const melding = document.querySelector("#melding");
+
+document.querySelectorAll("nav a").forEach(function(link) {
+    if (window.location.pathname.endsWith(link.getAttribute("href"))) {
+        link.classList.add("actief");
+    }
+});

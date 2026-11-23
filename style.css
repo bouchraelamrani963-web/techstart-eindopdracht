@@ -210,3 +210,16 @@ a[href^="https://"] {
         grid-template-columns: 1fr;
     }
 }
+.diensten-grid a {
+    display: inline-block;
+    background-color: #09235d;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+nav a.actief {
+    color: #f6c453;
+    text-decoration: underline;
+    font-weight: bold;
+}
