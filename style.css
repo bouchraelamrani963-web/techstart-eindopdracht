@@ -190,3 +190,23 @@ a[href^="https://"] {
     gap: 15px;
     max-width: 600px;
 }
+.diensten-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.diensten-grid section {
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+}
+.donker .diensten-grid section {
+    background-color: #243653;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .diensten-grid {
+        grid-template-columns: 1fr;
+    }
+}
